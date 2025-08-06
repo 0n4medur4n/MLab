@@ -47,7 +47,7 @@ M Lab Valencia is a web platform dedicated to creating and managing unique event
 
 ## 📂 Project Structure
 
-bash
+```bash
 MLab/
 ├── frontend/
 │ ├── src/
@@ -71,28 +71,37 @@ MLab/
 │ └── errorHandler.js
 ├── routes/
 └── server.js
+```
 
-Install dependencies
+## 🚀 Installation
+
+```bash
+# Install dependencies
 npm install
-Install frontend dependencies
+# Install frontend dependencies
 cd frontend && npm install
-Install backend dependencies
+# Install backend dependencies
 cd ../backend && npm install
+```
 
-bash
+## ⚙️ Environment Variables
+
+```bash
 PORT=3001
 NODE_ENV=development
 EMAIL_USER=monkeylab.ad@gmail.com
 EMAIL_PASS=your-password
+```
 
 ## 📝 Available Scripts
 
-json
+```json
 {
 "dev": "Starts frontend (5173) and backend (3001)",
 "build": "Builds project for production",
 "preview": "Preview build"
 }
+```
 
 ## 🔒 Implemented Security
 
