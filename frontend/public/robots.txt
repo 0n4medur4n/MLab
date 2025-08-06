@@ -1,0 +1,81 @@
+# MLab Valencia - Configuración de robots.txt
+
+# Permitir a todos los robots
+User-agent: *
+
+# Permitir acceso a todas las páginas principales
+Allow: /
+Allow: /eventos
+Allow: /nosotros
+Allow: /contacto
+Allow: /declaracion
+Allow: /es/*
+Allow: /en/*
+
+# Bloquear acceso a archivos y directorios específicos
+Disallow: /api/
+Disallow: /admin/
+Disallow: /backend/
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /assets/fonts/
+Disallow: /src/config/
+Disallow: /temp/
+Disallow: /draft-content/
+Disallow: /*?*
+
+# Bloquear páginas de desarrollo/staging
+Disallow: /dev/
+Disallow: /staging/
+Disallow: /test/
+
+# Tiempo de espera entre solicitudes
+Crawl-delay: 10
+
+# Sitemap
+Sitemap: https://monkeybusinessvalencia.com/sitemap.xml
+
+# Host preferido
+Host: https://monkeybusinessvalencia.com
+
+# Reglas específicas para bots principales
+
+# Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 5
+
+# Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 10
+
+# Facebook
+User-agent: Facebookexternalhit
+Allow: /
+Allow: /images/
+Allow: /assets/images/
+Crawl-delay: 5
+
+# Twitter
+User-agent: Twitterbot
+Allow: /
+Allow: /images/
+Allow: /assets/images/
+Crawl-delay: 5
+
+# Reglas para bots de redes sociales
+User-agent: WhatsApp
+Allow: /
+Allow: /images/
+Allow: /assets/images/
+
+# Bloquear bots maliciosos
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /

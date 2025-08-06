@@ -1,0 +1,56 @@
+.horizontal-scroll-container {
+  width: 100vw;
+  position: relative;
+}
+
+.scroll-section {
+  width: 100vw;
+  height: 100vh;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.sticky-viewport {
+  height: 500vh;
+  position: relative;
+}
+
+.sticky-container {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.horizontal-sections {
+  display: flex;
+  will-change: transform;
+}
+
+.scroll-progress {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: #9911ff;
+  bottom: 50px;
+  transform-origin: left;
+  transform: scaleX(0);
+}
+
+#hero,
+#story,
+#experience,
+#events,
+#community {
+  width: 100vw;
+  height: 100vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
